@@ -24,7 +24,7 @@ public class Server {
         	e.printStackTrace();
         }
         catch(BindException e) {
-			System.err.println("porta occupata");
+			System.err.println("porta occupata");//messaggio di errore porta occupata
 			e.printStackTrace();
 		}
         catch (IOException ex){
@@ -35,7 +35,7 @@ public class Server {
     public void inAscolto(){
         try{
 	        so = ss.accept();
-	        System.out.println("connessione stabilita");
+	        System.out.println("connessione stabilita");//connessione stabilita
         }
         catch(IOException e){
             e.printStackTrace();
