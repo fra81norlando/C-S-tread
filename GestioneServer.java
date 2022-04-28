@@ -1,18 +1,13 @@
-package cscountdown;
 
 public class GestioneServer {
 
-    
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        
-        Server srv = new Server(2000);
-        srv.inAscolto();
-        srv.scrivi("Benvenuto client");
-        
-    }
-    
+	public static void main(String[] args) {
+		Server srv = new Server(2000);
+		
+		if(srv!=null) {
+	        srv.inAscolto();
+	        srv.scrivi("5");
+	        System.out.println("Client: " +srv.leggi());
+		}
+	}
 }
